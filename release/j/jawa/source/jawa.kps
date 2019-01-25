@@ -1,94 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>12.0.66.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>10.0.1206.0</KeymanDeveloperVersion>
     <FileVersion>7.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
-    <ReadMeFile>welcome\welcome.htm</ReadMeFile>
-    <GraphicFile>jawa2.bmp</GraphicFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
-    <FollowKeyboardVersion/>
   </Options>
   <StartMenu>
-    <Folder>Jawa</Folder>
-    <AddUninstallEntry/>
-    <Items>
-      <Item>
-        <Name>Documentation</Name>
-        <FileName>welcome.htm</FileName>
-        <Arguments></Arguments>
-        <Icon></Icon>
-        <Location>psmelStartMenu</Location>
-      </Item>
-    </Items>
+    <Folder></Folder>
+    <Items/>
   </StartMenu>
   <Info>
     <Version URL="">1.0</Version>
     <Name URL="">Jawa</Name>
-    <Copyright URL="">© Benny Lin - 2019</Copyright>
-    <Author URL="mailto:bennylin.idwiki@hotmail.com">Benny Lin</Author>
-    <WebSite URL="http://is.gd/nulisa">My Github project website</WebSite>
+    <Copyright URL="">© Benny Lin - 2019-01-24</Copyright>
+    <Author URL="mailto:bennylin.idwikI@hotmail.com">Benny Lin</Author>
+    <WebSite URL="http://is.gd/nulisa">http://is.gd/nulisa</WebSite>
   </Info>
   <Files>
     <File>
-      <Name>jawa.bmp</Name>
-      <Description>Icon jawa.bmp</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.bmp</FileType>
-    </File>
-    <File>
-      <Name>welcome\welcome.htm</Name>
-      <Description>Welcome/Help file</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>jawa.jpg</Name>
-      <Description>File jawa.jpg</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.jpg</FileType>
-    </File>
-    <File>
-      <Name>jawa2.bmp</Name>
-      <Description>File jawa2.bmp</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.bmp</FileType>
-    </File>
-    <File>
-      <Name>..\build\jawa.kvk</Name>
+      <Name>jawa.kvk</Name>
       <Description>File jawa.kvk</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kvk</FileType>
     </File>
     <File>
-      <Name>..\build\jawa.kmx</Name>
-      <Description>Keyboard Nulisa Aksara Jawa</Description>
+      <Name>jawa.kmx</Name>
+      <Description>Keyboard Jawa</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
-    </File>
-    <File>
-      <Name>..\build\jawa.js</Name>
-      <Description>File jawa.js</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.js</FileType>
-    </File>
-    <File>
-      <Name>NotoSansJavanese-Regular.ttf</Name>
-      <Description>Font Noto Sans Javanese Regular</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ttf</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <Name>Nulisa Aksara Jawa</Name>
+      <Name>Jawa</Name>
       <ID>jawa</ID>
-      <Version>1.01</Version>
-      <OSKFont>NotoSansJavanese-Regular.ttf</OSKFont>
-      <DisplayFont>NotoSansJavanese-Regular.ttf</DisplayFont>
+      <Version>1.0</Version>
       <Languages>
         <Language ID="jv-Java">Javanese</Language>
       </Languages>

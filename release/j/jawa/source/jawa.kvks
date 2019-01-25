@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <visualkeyboard>
   <header>
     <version>10.0</version>
@@ -29,6 +29,11 @@
       <key vkey="K_F">ꦥ꦳</key>
       <key vkey="K_V">ꦮ꦳</key>
       <key vkey="K_Z">ꦗ꦳</key>
+      <key vkey="K_X">ꦼ</key>
+      <key vkey="K_E">ꦺ</key>
+      <key vkey="K_I">ꦶ</key>
+      <key vkey="K_U">ꦸ</key>
+      <key vkey="K_O">ꦺꦴ</key>
       <key vkey="K_M">ꦩ</key>
       <key vkey="K_BKSLASH">꧊</key>
       <key vkey="K_LBRKT">꧌</key>
@@ -51,11 +56,6 @@
       <key vkey="K_QUOTE">꧄</key>
       <key vkey="K_HYPHEN">ꦀ</key>
       <key vkey="K_EQUAL">ꧏ</key>
-      <key vkey="K_X">ꦲꦼ</key>
-      <key vkey="K_U">ꦲꦸ</key>
-      <key vkey="K_I">ꦲꦶ</key>
-      <key vkey="K_E">ꦲꦺ</key>
-      <key vkey="K_O">ꦲꦺꦴ</key>
     </layer>
     <layer shift="S">
       <key vkey="K_A">ꦄ</key>
@@ -98,8 +98,6 @@
       <key vkey="K_0">ꦘ</key>
       <key vkey="K_HYPHEN">ꦜ</key>
       <key vkey="K_EQUAL">ꦞ</key>
-      <key vkey="K_BKQUOTE">꦳</key>
-      <key vkey="K_SLASH">꦳</key>
     </layer>
     <layer shift="A">
       <key vkey="K_1">꦳</key>
