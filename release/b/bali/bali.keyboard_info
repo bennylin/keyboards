@@ -1,0 +1,30 @@
+{
+  "id" : "bali",
+  "name" : "Nulisa Aksara Bali",
+  "authorName" : "Benny Lin",
+  "authorEmail" : "bennylin.idwiki@hotmail.com",
+  "description" : "This keyboard is designed to type all Balinese characters and stacks directly. You get a Balinese character every time you press a Latin key, without having to use the Alt key or memorizing arbitrary key locations in QWERTY keyboard. This keyboard is based on Benny Lin's Nulisa Aksara Jawa web transliterator program - http://is.gd/nulisa.",
+  "license" : "mit",
+  "languages" : {
+    "ban-Bali" : {
+      "font": {
+        "family": "Vimala",
+        "source": [ "Vimala.ttf" ]
+      },
+      "oskFont" : {
+        "family" : "Noto Sans Balinese",
+        "source" : "NotoSansJavanese-Regular.ttf"
+      },
+      "example" : {
+        "keys" : "aksarabali",
+        "text" : "\u1b33\u1b13\u1b44\u1b31\u1b2d\u1b29\u1b2e\u1b36",
+        "note" : "Name of writing script"
+      }
+    },
+    "kaw-Bali": {
+      "font": {
+        "family": "Vimala",
+        "source": [ "Vimala.ttf" ]
+    }
+  }
+}

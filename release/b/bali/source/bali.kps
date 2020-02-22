@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>12.0.66.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>welcome\welcome.htm</ReadMeFile>
+    <GraphicFile>bali2.bmp</GraphicFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
+  </Options>
+  <StartMenu>
+    <Folder>Bali</Folder>
+    <AddUninstallEntry/>
+    <Items>
+      <Item>
+        <Name>Documentation</Name>
+        <FileName>welcome.htm</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+    </Items>
+  </StartMenu>
+  <Info>
+    <Version URL="">1.0</Version>
+    <Name URL="">Bali</Name>
+    <Copyright URL="">© 2019-2020 Benny Lin</Copyright>
+    <Author URL="mailto:bennylin.idwiki@hotmail.com">Benny Lin</Author>
+    <WebSite URL="http://is.gd/nulisa">My Github project website</WebSite>
+  </Info>
+  <Files>
+    <File>
+      <Name>bali.bmp</Name>
+      <Description>Icon bali.bmp</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.bmp</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>Welcome/Help file</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>bali.jpg</Name>
+      <Description>File bali.jpg</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.jpg</FileType>
+    </File>
+    <File>
+      <Name>bali2.bmp</Name>
+      <Description>File bali2.bmp</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.bmp</FileType>
+    </File>
+    <File>
+      <Name>..\build\bali.kvk</Name>
+      <Description>File bali.kvk</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>..\build\bali.kmx</Name>
+      <Description>Keyboard Nulisa Aksara Bali</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>..\build\bali.js</Name>
+      <Description>File bali.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>NotoSansBalinese-Regular.ttf</Name>
+      <Description>Font Noto Sans Balinese</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>Nulisa Aksara Bali</Name>
+      <ID>bali</ID>
+      <Version>1.0</Version>
+      <OSKFont>NotoSansBalinese-Regular.ttf</OSKFont>
+      <DisplayFont>NotoSansBalinese-Regular.ttf</DisplayFont>
+      <Languages>
+        <Language ID="ban-Bali">Balinese</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
+  <Strings/>
+</Package>
