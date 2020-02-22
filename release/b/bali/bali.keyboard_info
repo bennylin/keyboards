@@ -13,7 +13,7 @@
       },
       "oskFont" : {
         "family" : "Noto Sans Balinese",
-        "source" : "NotoSansJavanese-Regular.ttf"
+        "source" : "NotoSansBalinese-Regular.ttf"
       },
       "example" : {
         "keys" : "aksarabali",
