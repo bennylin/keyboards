@@ -19,7 +19,31 @@ begin Unicode > use(main)
 
 group(main) using keys
 
+c ^
+store(circumO) 'âêôÂÊÔ'
+store(circumK) 'aeoAEO'
+c '
+store(acuteO) 'áóúÁÓÚ' c e-acute already in main layout
+store(acuteK) 'aouAOU'
+c '
+store(graveO) 'àìÀÌ' c e-grave already in main layout
+store(graveK) 'aiAI'
+c "
+store(tremaO) 'öÖ' c or diaresis
+store(tremaK) 'oO'
+store(ZWS) U+200B c zero-width space
+c . 
+store(dotbelowO) "ṭḍṬḌ"
+store(dotbelowK) "tdtd" 
+
+"^" + any(circumK) > index(circumO, 2)
+"'" + any(acuteK) > index(acuteO, 2)
+"`" + any(graveK) > index(graveO, 2)
+'"' + any(tremaK) > index(tremaO, 2)
+'.' + any(dotbelowK) > index(dotbelowO, 2)
+
 + [K_SPACE] > U+0020
++ [SHIFT K_SPACE] > $ZWS c if one do not wish the above accented letters
 
 + [K_0] > U+0030
 + [SHIFT K_0] > U+0029
@@ -241,3 +265,9 @@ U+0051 + [CAPS SHIFT K_Z] > U+007a
 
 + [K_oE2] > U+005c
 + [SHIFT K_oE2] > U+007c
+
+if(&platform = 'touch') + [T_NG] > 'n' 'g'
+if(&platform = 'touch') + [T_NY] > 'n' 'y'
+if(&platform = 'touch') + [SHIFT T_NG] > 'N' 'g'
+if(&platform = 'touch') + [SHIFT T_NY] > 'N' 'y'
+

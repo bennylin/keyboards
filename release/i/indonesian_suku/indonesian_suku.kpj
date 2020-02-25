@@ -9,7 +9,7 @@
   </Options>
   <Files>
     <File>
-      <ID>id_9c29deeb7e3155625eb231e42088f295</ID>
+      <ID>id_277c7ce3661b03f3634fc08bbef7ac0b</ID>
       <Filename>indonesian_suku.kmn</Filename>
       <Filepath>source\indonesian_suku.kmn</Filepath>
       <FileVersion>1.0</FileVersion>
@@ -65,7 +65,7 @@
       <Filepath>source\indonesian_suku.ico</Filepath>
       <FileVersion></FileVersion>
       <FileType>.ico</FileType>
-      <ParentFileID>id_9c29deeb7e3155625eb231e42088f295</ParentFileID>
+      <ParentFileID>id_277c7ce3661b03f3634fc08bbef7ac0b</ParentFileID>
     </File>
     <File>
       <ID>id_de0c18c14a7316bfd1ab18a1d30ce80e</ID>
