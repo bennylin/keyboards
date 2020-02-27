@@ -19,6 +19,9 @@ begin Unicode > use(main)
 
 group(main) using keys
 
+store(controls) "ABCDEFGHIJKLMNOOPQRSTUVWXYZ\<>:_1234567890"
+if(&platform = 'touch') + any(controls) > use(Touch)
+
 c ^
 store(circumO) 'âêôÂÊÔ'
 store(circumK) 'aeoAEO'
@@ -266,8 +269,21 @@ U+0051 + [CAPS SHIFT K_Z] > U+007a
 + [K_oE2] > U+005c
 + [SHIFT K_oE2] > U+007c
 
-if(&platform = 'touch') + [T_NG] > 'n' 'g'
-if(&platform = 'touch') + [T_NY] > 'n' 'y'
-if(&platform = 'touch') + [SHIFT T_NG] > 'N' 'g'
-if(&platform = 'touch') + [SHIFT T_NY] > 'N' 'y'
++ [T_NG] > 'n' 'g'
++ [T_NY] > 'n' 'y'
++ [SHIFT T_NG] > 'N' 'g' set(&layer = "default")
++ [SHIFT T_NY] > 'N' 'y' set(&layer = "default")
 
+c doesn't work
++ [SHIFT K_SPACE] > ' ' set(&layer = "default")
+c doesn't work either
+if(&layer = 'shift') + [K_SPACE] > ' ' set(&layer = "default")
+if(&layer = 'shift') + ' ' > ' ' set(&layer = "default")
+
+group(Touch) using keys
+
+store(controls)  "ABCDEFGHIJKLMNOOPQRSTUVWXYZ\<>:_"
+store(numbers) "1234567890"
+
+if(&layer = 'shift') + any(controls) > index(controls, 2) set(&layer = "default")
+if(&layer = 'numeric') + any(numbers) > index(numbers, 2) set(&layer = "default")
