@@ -46,7 +46,12 @@ store(dotbelowK) "tdtd"
 '.' + any(dotbelowK) > index(dotbelowO, 2)
 
 + [K_SPACE] > U+0020
-+ [SHIFT K_SPACE] > $ZWS c if one do not wish the above accented letters
+c + [SHIFT K_SPACE] > $ZWS c if one do not wish the above accented letters
+c doesn't work
+c + [SHIFT K_SPACE] > ' ' set(&layer = "default")
+c doesn't work either
+c if(&layer = 'shift') + [K_SPACE] > ' ' set(&layer = "default")
+if(&layer = 'shift') + ' ' > ' ' set(&layer = "default")
 
 + [K_0] > U+0030
 + [SHIFT K_0] > U+0029
@@ -274,16 +279,10 @@ U+0051 + [CAPS SHIFT K_Z] > U+007a
 + [SHIFT T_NG] > 'N' 'g' set(&layer = "default")
 + [SHIFT T_NY] > 'N' 'y' set(&layer = "default")
 
-c doesn't work
-+ [SHIFT K_SPACE] > ' ' set(&layer = "default")
-c doesn't work either
-if(&layer = 'shift') + [K_SPACE] > ' ' set(&layer = "default")
-if(&layer = 'shift') + ' ' > ' ' set(&layer = "default")
-
 group(Touch) using keys
 
 store(controls)  "ABCDEFGHIJKLMNOOPQRSTUVWXYZ\<>:_"
 store(numbers) "1234567890"
 
 if(&layer = 'shift') + any(controls) > index(controls, 2) set(&layer = "default")
-if(&layer = 'numeric') + any(numbers) > index(numbers, 2) set(&layer = "default")
+if(&layer = 'numeric') any(numbers) + ' ' > index(numbers, 2) ' ' set(&layer = "default")
