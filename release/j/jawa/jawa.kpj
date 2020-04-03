@@ -33,6 +33,22 @@
       </Details>
     </File>
     <File>
+      <ID>id_09484ddbcf7c374704601dcc091a2d0b</ID>
+      <Filename>jawa_latin_ipa.kmn</Filename>
+      <Filepath>..\jawa_latin_ipa\jawa_latin_ipa.kmn</Filepath>
+      <FileVersion>1.0</FileVersion>
+      <FileType>.kmn</FileType>
+      <Details/>
+    </File>
+    <File>
+      <ID>id_d8f78e76eb7ab43549efd9c3f254de39</ID>
+      <Filename>jawa_latin_ipa.ico</Filename>
+      <Filepath>..\jawa_latin_ipa\jawa_latin_ipa.ico</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.ico</FileType>
+      <ParentFileID>id_09484ddbcf7c374704601dcc091a2d0b</ParentFileID>
+    </File>
+    <File>
       <ID>id_54c40d031867720317271febd5e9b1b6</ID>
       <Filename>jawa.bmp</Filename>
       <Filepath>source\jawa.bmp</Filepath>

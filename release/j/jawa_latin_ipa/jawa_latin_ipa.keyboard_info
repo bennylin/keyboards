@@ -1,0 +1,28 @@
+{
+  "license": "mit",
+  "languages": {
+    "en": {},
+    "id": {
+      "example": {
+        "keys": "Ini ibu Budi",
+        "text": "Ini ibu Budi",
+        "note": "\"Ini ibu Budi\""
+      }
+    },
+    "ms": {},
+    "jv": {},
+    "jv-Latn": {},
+    "ban": {},
+    "ban-Latn": {},
+    "su": {},
+    "su-Latn": {},
+    "min": {},
+    "ace": {},
+    "bjn": {},
+    "bug": {},
+    "bug-Latn": {},
+    "gor": {},
+    "tet": {}
+  },
+  "description": "Modified from my Indonesian-suku keyboard."
+}

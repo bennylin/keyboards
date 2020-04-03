@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>12.0.66.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
+  </Options>
+  <StartMenu>
+    <Folder>Keyboard Indonesia\Jawa Latin IPA</Folder>
+    <AddUninstallEntry/>
+    <Items>
+      <Item>
+        <Name>Readme</Name>
+        <FileName>readme.htm</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+      <Item>
+        <Name>Welcome</Name>
+        <FileName>welcome.htm</FileName>
+        <Arguments></Arguments>
+        <Icon></Icon>
+        <Location>psmelStartMenu</Location>
+      </Item>
+    </Items>
+  </StartMenu>
+  <Info>
+    <Name URL="">Jawa Latin IPA Keyboard</Name>
+    <Copyright URL="">© 2020 Benny Lin</Copyright>
+    <Author URL="mailto:bennylin.idwiki@hotmail.com">Benny Lin</Author>
+    <WebSite URL="github.com/bennylin">github.com/bennylin</WebSite>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\jawa_latin_ipa.kmx</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>..\build\jawa_latin_ipa.js</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\build\jawa_latin_ipa.kvk</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>welcome\jawa_latin_ipa.jpg</Name>
+      <Description>File jawa_latin_ipa.jpg</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.jpg</FileType>
+    </File>
+    <File>
+      <Name>welcome\iast.jpg</Name>
+      <Description>File iast.jpg</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.jpg</FileType>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>Jawa Latin IPA</Name>
+      <ID>jawa_latin_ipa</ID>
+      <Version>2.0</Version>
+      <Languages>
+        <Language ID="id">Bahasa Indonesia</Language>
+        <Language ID="ms">Bahasa Melayu</Language>
+        <Language ID="jv-Latn">Basa Jawa</Language>
+        <Language ID="ban-Latn">Basa Bali</Language>
+        <Language ID="su-Latn">Basa Sunda</Language>
+        <Language ID="min-Latn">Baso Minang</Language>
+        <Language ID="ace-Latn">Bahsa Acèh</Language>
+        <Language ID="bjn-Latn">Basa Banjar</Language>
+        <Language ID="bug-Latn">Basa Bugi (Bugis)</Language>
+        <Language ID="gor-Latn">Basa Gorontalo</Language>
+        <Language ID="tet-Latn">Basa Tetun</Language>
+        <Language ID="btd-Latn">Kata Pakpak (Dairi)</Language>
+        <Language ID="btx-Latn">Cakap Karo</Language>
+        <Language ID="bbc-Latn">Hata Batak Toba</Language>
+        <Language ID="nia-Latn">Li Niha (Nias)</Language>
+        <Language ID="mak-Latn">Basa Mangkasara' (Makassar)</Language>
+        <Language ID="sda-Latn">Toraja-Sa'dan</Language>
+        <Language ID="twu-Latn">Rote Termanu</Language>
+        <Language ID="mnx-Latn">Manikion/Mantion/Sougb</Language>
+        <Language ID="en">English</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
+  <Strings/>
+</Package>
