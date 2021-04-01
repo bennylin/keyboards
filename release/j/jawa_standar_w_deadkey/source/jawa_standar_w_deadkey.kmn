@@ -1,0 +1,207 @@
+﻿c Layout Standar Aksara Jawa hasil keputusan KAJ I 24 Maret 2021 dengan Deadkey
+c 
+c Proof of concept di Keyman.
+c 
+c Benny Lin
+store(&NAME) 'Layout Standar Aksara Jawa KAJ I dengan Deadkey'
+store(&VISUALKEYBOARD) 'jawa_standar_w_deadkey.kvks'
+store(&LAYOUTFILE) 'jawa_standar_w_deadkey.keyman-touch-layout'
+store(&TARGETS) 'any'
+store(&KEYBOARDVERSION) '1.1'
+store(&COPYRIGHT) 'Bennylin 2021'
+store(&MESSAGE) 'Layout Standar Aksara Jawa Kongres Aksara Jawa I dengan Deadkey'
+store(&KMW_HELPTEXT) 'https://bennylin.github.io/kongres'
+store(&KMW_HELPFILE) 'jawa_standar_w_deadkey-help.htm'
+begin Unicode > use(main)
+
+group(main) using keys
+store(ZWS) U+200B
+store(ZWJ) U+200C
+store(VS1) U+FE00
+
+store(nglegena) [K_B] [K_C] [K_D] [K_G] [K_H] [K_J] [K_K] [K_L] [K_M] [K_N] [K_P] [K_R] [K_S] [K_T] [K_W] [K_Y] [K_Z] [K_A] [K_COLON] [K_QUOTE] [SHIFT K_B] [SHIFT K_C] [SHIFT K_D] [SHIFT K_G] [SHIFT K_J] [SHIFT K_K] [SHIFT K_N] [SHIFT K_P] [SHIFT K_Q] [SHIFT K_S] [SHIFT K_T] [SHIFT K_X] [SHIFT K_Z] [SHIFT K_COLON] [SHIFT K_QUOTE] [SHIFT K_EQUAL] 
+store(indeksNglegena) 'ꦧꦕꦢꦒꦲꦗꦏꦭꦩꦤꦥꦫꦱꦠꦮꦪꦚꦔꦝꦛ' 'ꦨꦖꦣꦓꦘꦑꦟꦦꦐꦯꦡꦬꦰꦞꦜꦙ'
+
+store(sandhangan) [K_Q] [K_E] [K_U] [K_I] [K_X] [K_LBRKT] [K_RBRKT] [SHIFT K_H] [K_HYPHEN] [K_EQUAL] [SHIFT K_HYPHEN] [SHIFT K_W] [SHIFT K_R] [SHIFT K_Y] [SHIFT K_F] [SHIFT K_L] [SHIFT K_COMMA] 
+store(indeksSandhangan) '꧀ꦺꦸꦶꦼ' 'ꦁ' 'ꦂ' 'ꦃ' '꦳' 'ꦀ' 'ꦷ' 'ꦻ' 'ꦿ' 'ꦾ' 'ꦽ' 'ꦴ' 'ꦹ'
+
+c nglegena + sandhangan
+store(all) outs(nglegena) outs(sandhangan)
+store(indeksAll) outs(indeksNglegena) outs(indeksSandhangan)
+
+c ccccccccccccccccc
+c Handle sandhangan
+c ccccccccccccccccc
+
+any(indeksNglegena) + any(sandhangan) > index(indeksNglegena,1) index(indeksSandhangan,2)
+any(indeksNglegena) + [K_O] > index(indeksNglegena,1) 'ꦺꦴ'
+
+c any(sandhangan) + any(sandhangan) > nul c disallowed, need intensive test for all possible scenario
+any(indeksSandhangan) + any(sandhangan) > index(indeksSandhangan, 1) index(indeksSandhangan, 2)
+
+c + any(sandhangan) > index(indeksDeadkeys) c currently not possible
++ [K_Q]                          > dk(pangkon) c '꧀'
++ [K_E]                          > dk(taling) c 'ꦺ'
++ [K_U]                          > dk(suku) c 'ꦸ'
++ [K_I]                          > dk(wulu) c 'ꦶ'
++ [K_O]                          > dk(talingtarung) c 'ꦺꦴ' c special case, not stored in store(sandhangan) because it maps 1-to-2
++ [K_X]                          > dk(pepet) c 'ꦼ'
++ [K_LBRKT]                      > dk(cecak) c 'ꦁ' $ZWS
++ [K_RBRKT]                      > dk(layar) c 'ꦂ' $ZWS
++ [SHIFT K_H]                    > dk(wignyan) c 'ꦃ' $ZWS
+
++ [K_HYPHEN]                     > dk(cecaktelu) c '꦳'
++ [K_EQUAL]                      > dk(panyangga) c 'ꦀ' 
++ [SHIFT K_HYPHEN]               > dk(wulumelik) c 'ꦷ' 
++ [SHIFT K_W]                    > dk(dirgamure) c 'ꦻ' 
++ [SHIFT K_R]                    > dk(cakra) c 'ꦿ' 
++ [SHIFT K_Y]                    > dk(pengkal) c 'ꦾ' 
++ [SHIFT K_F]                    > dk(keret) c 'ꦽ' 
++ [SHIFT K_L]                    > dk(tarung) c 'ꦴ'
++ [SHIFT K_COMMA]                > dk(sukumendut) c 'ꦹ'
+
+dk(pangkon)      + [K_Q]         > '꧀'
+dk(taling)       + [K_E]         > 'ꦺ'
+dk(suku)         + [K_U]         > 'ꦸ'
+dk(wulu)         + [K_I]         > 'ꦶ'
+dk(talingtarung) + [K_O]         > 'ꦺꦴ'
+dk(pepet)        + [K_X]         > 'ꦼ'
+dk(cecak)        + [K_LBRKT]     > 'ꦁ' $ZWS
+dk(layar)        + [K_RBRKT]     > 'ꦂ' $ZWS
+dk(wignyan)      + [SHIFT K_H]   > 'ꦃ' $ZWS
+
+dk(cecaktelu) + [K_HYPHEN]       > '꦳'
+dk(panyangga) + [K_EQUAL]        > 'ꦀ' 
+dk(wulumelik) + [SHIFT K_HYPHEN] > 'ꦷ' 
+dk(dirgamure) + [SHIFT K_W]      > 'ꦻ' 
+dk(cakra)     + [SHIFT K_R]      > 'ꦿ' 
+dk(pengkal)   + [SHIFT K_Y]      > 'ꦾ' 
+dk(keret)     + [SHIFT K_F]      > 'ꦽ' 
+dk(tarung)    + [SHIFT K_L]      > 'ꦴ'
+dk(sukumendut) + [SHIFT K_COMMA] > 'ꦹ'
+
+c untuk sementara sandhangan + sandhangan diperbolehkan. perlu dibuat aturan larangan
+c TODO: sandhangan + o
+dk(pangkon)      + any(all) > index(indeksAll,2) '꧀'
+dk(taling)       + any(all) > index(indeksAll,2) 'ꦺ'
+dk(suku)         + any(all) > index(indeksAll,2) 'ꦸ'
+dk(wulu)         + any(all) > index(indeksAll,2) 'ꦶ'
+dk(talingtarung) + any(all) > index(indeksAll,2) 'ꦺꦴ'
+dk(pepet)        + any(all) > index(indeksAll,2) 'ꦼ'
+dk(cecak)        + any(all) > index(indeksAll,2) 'ꦁ' $ZWS
+dk(layar)        + any(all) > index(indeksAll,2) 'ꦂ' $ZWS
+dk(wignyan)      + any(all) > index(indeksAll,2) 'ꦃ' $ZWS
+
+dk(cecaktelu)    + any(all) > index(indeksAll,2) '꦳'
+dk(panyangga)    + any(all) > index(indeksAll,2) 'ꦀ' 
+dk(wulumelik)    + any(all) > index(indeksAll,2) 'ꦷ' 
+dk(dirgamure)    + any(all) > index(indeksAll,2) 'ꦻ' 
+dk(cakra)        + any(all) > index(indeksAll,2) 'ꦿ' 
+dk(pengkal)      + any(all) > index(indeksAll,2) 'ꦾ' 
+dk(keret)        + any(all) > index(indeksAll,2) 'ꦽ' 
+dk(tarung)       + any(all) > index(indeksAll,2) 'ꦴ'
+dk(sukumendut)   + any(all) > index(indeksAll,2) 'ꦹ'
+
+c ccccccccccccccc
+c Handle nglegena
+c ccccccccccccccc
+
++ any(nglegena) > index(indeksNglegena,1)
+
+c ccccccccccccccc
+c other characters and symbols
+c ccccccccccccccc
+
++ [K_BKQUOTE] >       '꧇'
++ [K_1] >             '꧑'
++ [K_2] >             '꧒'
++ [K_3] >             '꧓'
++ [K_4] >             '꧔'
++ [K_5] >             '꧕'
++ [K_6] >             '꧖'
++ [K_7] >             '꧗'
++ [K_8] >             '꧘'
++ [K_9] >             '꧙'
++ [K_0] >             '꧐'
+
++ [K_BKSLASH] >       $VS1
++ [K_COMMA] >         '꧈' $ZWS
++ [K_PERIOD] >        '꧉' $ZWS
++ [K_SLASH] >         '꧋'
+
++ [SHIFT K_BKQUOTE] > '꧊'
++ [SHIFT K_1] >       'ꦵ'
++ [SHIFT K_2] >       'ꧏ'
++ [SHIFT K_3] >       '꧆'
++ [SHIFT K_4] >       '꧞'
++ [SHIFT K_5] >       '꧟'
++ [SHIFT K_6] >       '꧃'
++ [SHIFT K_7] >       '꧄'
++ [SHIFT K_8] >       '꧅'
++ [SHIFT K_9] >       '꧌'
++ [SHIFT K_0] >       '꧍'
++ [SHIFT K_E] >       'ꦌ'
++ [SHIFT K_U] >       'ꦈ'
++ [SHIFT K_I] >       'ꦆ'
++ [SHIFT K_O] >       'ꦎ'
++ [SHIFT K_LBRKT] >   '꧁'
++ [SHIFT K_RBRKT] >   '꧂'
++ [SHIFT K_BKSLASH] > $ZWS
++ [SHIFT K_A] >       'ꦄ'
++ [SHIFT K_M] >       'ꦍ'
++ [SHIFT K_PERIOD] >  'ꦅ'
++ [SHIFT K_SLASH] >   'ꦇ'
+
+c Longpress keys for touch layout
++ [T_new_1] > '`'
++ [T_new_2] > '~'
++ [T_new_3] > '1'
++ [T_new_4] > '!'
++ [T_new_5] > '2'
++ [T_new_6] > '@'
++ [T_new_7] > '3'
++ [T_new_8] > '#'
++ [T_new_9] > '4'
++ [T_new_10] > '$'
++ [T_new_11] > '5'
++ [T_new_12] > '%'
++ [T_new_13] > '6'
++ [T_new_14] > '^'
++ [T_new_15] > '7'
++ [T_new_16] > '&'
++ [T_new_17] > '8'
++ [T_new_18] > '*'
++ [T_new_19] > '9'
++ [T_new_20] > '('
++ [T_new_21] > '0'
++ [T_new_22] > ')'
++ [T_new_23] > '-'
++ [T_new_24] > '_'
++ [T_new_25] > '='
++ [T_new_26] > '+'
++ [T_new_51] > 'ꦲꦺ'
++ [T_new_91] > 'ꦲꦸ'
++ [T_new_101] > 'ꦲꦶ'
++ [T_new_111] > 'ꦲꦺꦴ'
++ [T_new_131] > '['
++ [T_new_132] > '{'
++ [T_new_141] > ']'
++ [T_new_142] > '}'
++ [T_new_151] > '\'
++ [T_new_152] > '|'
++ [T_new_191] > 'ꦥ꦳'
++ [T_new_251] > ';'
++ [T_new_252] > ':'
++ [T_new_261] > "'"
++ [T_new_262] > '"'
++ [T_new_341] > ','
++ [T_new_342] > '<'
++ [T_new_351] > '.'
++ [T_new_352] > '>'
++ [T_new_361] > '/'
++ [T_new_362] > '?'
++ [T_new_271] > 'ꦗ꦳'
++ [T_new_281] > 'ꦄꦼ'
++ [T_new_282] > 'ꦑ꦳'
++ [T_new_283] > 'ꦲꦼ'
++ [T_new_301] > 'ꦮ꦳'

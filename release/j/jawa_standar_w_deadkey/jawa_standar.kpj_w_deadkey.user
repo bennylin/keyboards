@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<KeymanDeveloperProjectUser>
+  <ViewState>
+    <tab>1</tab>
+    <showhelp>1</showhelp>
+    <path>c:\Users\Huawei\Documents\GitHub\keyboards\release\j\jawa_standar\jawa_standar.kpj</path>
+  </ViewState>
+  <FileStates>
+    <FileState>
+      <ID>id_04308dc280e138b97551053eafb4064d</ID>
+      <FullPath>c:\Users\Huawei\Documents\GitHub\keyboards\release\j\jawa_standar\source\jawa_standar.kmn</FullPath>
+      <IDEState>
+        <LayoutDisplay102Key>0</LayoutDisplay102Key>
+        <DebugDefaultFont>1</DebugDefaultFont>
+        <DebugFont>Consolas|-9|   |0</DebugFont>
+        <CodeFont>Consolas|-9|   |0</CodeFont>
+        <CharFont>Consolas|-9|   |0</CharFont>
+      </IDEState>
+      <Debug>False</Debug>
+    </FileState>
+    <FileState>
+      <ID>id_bff8cbb153a9551e2ccdecadc9eda1f8</ID>
+      <FullPath>c:\Users\Huawei\Documents\GitHub\keyboards\release\j\jawa_standar\source\jawa_standar.kps</FullPath>
+    </FileState>
+    <FileState>
+      <ID>id_ede98e4633e239f933cbfd1f4e1b766c</ID>
+      <FullPath>c:\Users\Huawei\Documents\GitHub\keyboards\release\j\jawa_standar\HISTORY.md</FullPath>
+    </FileState>
+    <FileState>
+      <ID>id_53e892b8b41cc4caece1cfd5ef21d6e7</ID>
+      <FullPath>c:\Users\Huawei\Documents\GitHub\keyboards\release\j\jawa_standar\LICENSE.md</FullPath>
+    </FileState>
+    <FileState>
+      <ID>id_0730bb7c2e8f9ea2438b52e419dd86c9</ID>
+      <FullPath>c:\Users\Huawei\Documents\GitHub\keyboards\release\j\jawa_standar\README.md</FullPath>
+    </FileState>
+    <FileState>
+      <ID>id_f406e1cfc8bd0d2d006f938a7d3ea317</ID>
+      <FullPath>c:\Users\Huawei\Documents\GitHub\keyboards\release\j\jawa_standar\jawa_standar.keyboard_info</FullPath>
+    </FileState>
+    <FileState>
+      <ID>id_0c77072ab03ce1fda958219ff7b15996</ID>
+      <FullPath>c:\Users\Huawei\Documents\GitHub\keyboards\release\j\jawa_standar\source\..\build\jawa_standar.kmx</FullPath>
+    </FileState>
+    <FileState>
+      <ID>id_71f3a8a36c2dc0d0c72ad7feba682f10</ID>
+      <FullPath>c:\Users\Huawei\Documents\GitHub\keyboards\release\j\jawa_standar\source\..\build\jawa_standar.js</FullPath>
+    </FileState>
+    <FileState>
+      <ID>id_1a940729061333f3116a420ab46ff089</ID>
+      <FullPath>c:\Users\Huawei\Documents\GitHub\keyboards\release\j\jawa_standar\source\..\build\jawa_standar.kvk</FullPath>
+    </FileState>
+    <FileState>
+      <ID>id_356e5d149c1e539356d72698c1e401a6</ID>
+      <FullPath>c:\Users\Huawei\Documents\GitHub\keyboards\release\j\jawa_standar\source\welcome.htm</FullPath>
+    </FileState>
+    <FileState>
+      <ID>id_8da344c4cea6f467013357fe099006f5</ID>
+      <FullPath>c:\Users\Huawei\Documents\GitHub\keyboards\release\j\jawa_standar\source\readme.htm</FullPath>
+    </FileState>
+  </FileStates>
+  <MRU>
+    <File>
+      <ID>id_MRU0</ID>
+      <Filename>jawa_standar.kmn</Filename>
+      <FileType>.kmn</FileType>
+      <FullPath>c:\Users\Huawei\Documents\GitHub\keyboards\release\j\jawa_standar\source\jawa_standar.kmn</FullPath>
+    </File>
+  </MRU>
+</KeymanDeveloperProjectUser>
